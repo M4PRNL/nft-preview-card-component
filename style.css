@@ -58,15 +58,18 @@ body {
 	grid-template-columns: auto auto;
 }
 .card-info__title {
+	grid-column: 1 / span 2;
+	margin-bottom: 1rem;
+}
+.card-info__title a {
+	text-decoration: none;
 	color: white;
 	font-size: 1.35rem;
 	font-weight: 600;
-	grid-column: 1 / span 2;
-	margin-bottom: 1rem;
 	transition: color 0.25s;
-	text-decoration: none;
 }
-.card-info__title:hover { color: var(--cyan); }
+
+.card-info__title a:hover { color: var(--cyan); }
 .card-info__description {
 	color: var(--soft-blue);
 	font-size: 1rem;
